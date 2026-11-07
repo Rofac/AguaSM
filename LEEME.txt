@@ -1,0 +1,53 @@
+AGUAS SANTA MARÍA · App de reparto para el celular (RoFac v1.0)
+================================================================
+
+QUÉ ES
+Una app que se abre en Chrome del celular y queda instalada con el ícono de Aguas Santa María.
+Funciona SIN INTERNET. Los datos quedan guardados en el celular (no en internet). No necesita computadora.
+
+QUÉ TIENE
+- Clientes: dirección, zona, teléfono, días de reparto, "pedido de siempre", precio especial,
+  envases nuestros que tiene, cuenta (debe / a favor), notas. Botón de mapa, llamar y WhatsApp.
+- Reparto del día: lista de paradas en orden (se puede cambiar el orden), cuántos bidones cargar,
+  "Entregar" o "No compró" (no estaba, tenía agua...). Barra de avance.
+- Entrega: cantidades con + y −, vacíos que devuelve, paga ahora / fiado / paga y salda lo que debía,
+  varios medios de pago. Comprobante por WhatsApp. Anular con motivo (devuelve stock, envases y cuenta).
+- Cobrar deuda (también pagos parciales o adelantos). Mandar la cuenta por WhatsApp.
+- Stock: llenos, vacíos en el depósito y envases en clientes. Llenado, compra, envases nuevos,
+  rotos/perdidos y conteo. Las entregas descuentan solas.
+- Caja: hoy, ayer, semana, mes, año o fechas a elección. Por medio de pago, día por día, gastos y retiros.
+- Informes: bidones por mes, los que más compran, gastos por tipo, envases en cada cliente.
+- Avisos: quién debe, stock bajo, clientes que hace mucho no compran, copia de seguridad.
+- Clave del dueño (opcional) para Caja, Informes, Configuración y anulaciones.
+- Copia de seguridad a Google Drive o WhatsApp + una copia automática por día adentro del celular (últimas 5).
+
+PARA RODRIGO Y FACUNDO: CÓMO PUBLICARLA (igual que Wolves)
+1. En GitHub (cuenta Rofac): "+" > "New repository". Nombre: agua (o el que quieran). "Public". "Create repository".
+2. "Add file" > "Upload files": subir index.html, sw.js, manifest.webmanifest y LEEME.txt. "Commit changes".
+3. Después subir las carpetas css, js e img (de a una: arrastrar la carpeta entera). "Commit changes".
+4. "Settings" > "Pages": Branch "main" y "/ (root)" > "Save". Esperar 1 o 2 minutos.
+   La dirección queda, por ejemplo: https://rofac.github.io/agua/
+
+EN EL CELULAR DEL CLIENTE
+1. Abrir Chrome y entrar a la dirección. Aceptar los términos.
+2. Tocar "Instalar" (arriba) o menú ⋮ > "Agregar a la pantalla principal".
+3. Configuración: precio del bidón (y de otros productos si vende), ciudad, clave si quiere.
+4. Stock: "Conté el depósito" con los llenos y vacíos que tiene.
+5. Clientes: cargarlos con los días de reparto, pedido de siempre y cuántos envases tienen.
+En iPhone: Safari > Compartir > "Agregar a pantalla de inicio".
+
+LICENCIA
+- 30 días de prueba; después queda en sólo lectura hasta cargar la licencia.
+- El cliente manda el "Código de este celular" (Configuración > Licencia, botón WhatsApp).
+- generar_licencia_apps.py (PRIVADO, nunca se entrega): opción 2 = Reparto de agua.
+  El nombre tiene que ser IGUAL al de Configuración (ej. "Aguas Santa María").
+  O por línea de comandos: python generar_licencia_apps.py "Aguas Santa María" 31/12/2027 XXXX-XXXX-XXXX AGU
+- Olvido de la clave del dueño: el cliente manda el código AGU-XXXX-XXXX y se usa la opción 9.
+
+ACTUALIZAR: subir los archivos nuevos al mismo repositorio. El celular se actualiza solo al abrirla con
+internet (a veces hay que cerrarla y abrirla dos veces). Los datos NO se tocan.
+
+MUY IMPORTANTE PARA EL CLIENTE
+- Los datos están en el celular. Si lo resetean, borran los datos de Chrome o desinstalan la app SIN COPIA,
+  se pierde todo. Copia una vez por semana (la app avisa).
+- Si el hermano quiere usarla en su celular: cada celular tiene sus propios datos (no se sincronizan).
